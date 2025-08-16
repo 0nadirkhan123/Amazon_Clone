@@ -37,6 +37,7 @@ This project replicates a simplified **Amazon shopping experience** — product 
    ```bash
    git clone https://github.com/your-username/amazon-clone.git
    cd amazon-clone
+   npm run dev
 
 
 
