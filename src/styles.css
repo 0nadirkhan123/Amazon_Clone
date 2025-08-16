@@ -1,0 +1,44 @@
+/* Simple beginner-friendly styles */
+:root {
+  --bg: #ffffff;
+  --text: #111111;
+  --card: #ffffff;
+}
+
+body.dark {
+  --bg: #0f172a;
+  --text: #e2e8f0;
+  --card: #111827;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.2s, color 0.2s;
+}
+
+.card {
+  background: var(--card);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,.1);
+}
+
+.banner {
+  background: linear-gradient(135deg, #ffe082, #ffcc80);
+  border-radius: .75rem;
+}
+
+.price-badge{
+  font-weight: 600;
+}
+
+.line-clamp-2{
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
